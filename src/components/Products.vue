@@ -16,7 +16,7 @@
                 <tr v-for="thisProduct in products" :key="thisProduct.ProductID">
                     <th>{{thisProduct.Name}}</th>
                     <td>{{thisProduct.Color}}</td>
-                    <td>{{thisProduct.Price}}</td>
+                    <td>${{thisProduct.Price}}</td>
                     <td>
                         <router-link :to="`/products/${thisProduct.ProductID}`">
                             <button type="button" class="btn btn-primary">Details</button>
