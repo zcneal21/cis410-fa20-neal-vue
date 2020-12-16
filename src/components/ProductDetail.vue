@@ -19,6 +19,9 @@
          <router-link v-else :to="`/signin`">
             <button type="button" class="btn btn-outline-success">Sign In to Order</button>
         </router-link>
+        <br>
+        <br>
+        <router-view></router-view>
     </div>
 </template>
 

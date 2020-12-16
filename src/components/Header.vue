@@ -24,10 +24,8 @@
         </router-link>
       </li>
       <li class="nav-item" v-if="auth">
-        <!-- <router-link class="nav-link"> -->
           <button @click="onLogout" class="btn btn-warning">Log Out</button>
-        <!-- </router-link> -->
-      </li>
+        </li>
       
     </ul>
   </div>
@@ -39,11 +37,11 @@ export default {
     computed:{
        auth(){
             return this.$store.state.token
-        },
-      methods:{
+        }
+    },
+    methods:{
         onLogout(){this.$store.dispatch("logout")}
       }
-    }
 }
 </script>
 
